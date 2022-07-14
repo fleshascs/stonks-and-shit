@@ -11,7 +11,7 @@ export interface SidebarProps {
 const Sidebar: FC<SidebarProps> = ({ children }) => {
   return (
     <>
-      <Card>sidebar</Card>
+      <Card>Sidebar</Card>
       <AdSense.Google
         client='ca-pub-3219722052726085'
         slot='4021017786'
