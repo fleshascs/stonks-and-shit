@@ -2,6 +2,7 @@ import { FC, ReactNode } from 'react';
 import AdSense from 'react-adsense';
 import { ListGroup, ListGroupItem } from './ListGroup';
 import Image from './Image';
+import Card from './Card';
 
 export interface SidebarProps {
   children?: ReactNode;
@@ -10,6 +11,7 @@ export interface SidebarProps {
 const Sidebar: FC<SidebarProps> = ({ children }) => {
   return (
     <>
+      <Card>sidebar</Card>
       <AdSense.Google
         client='ca-pub-3219722052726085'
         slot='4021017786'

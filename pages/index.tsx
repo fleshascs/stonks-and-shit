@@ -16,7 +16,7 @@ export default function Home() {
       </div>
 
       <div className='flex flex-col lg:flex-row lg:space-x-4 pb-24'>
-        <div className='basis-2/3 '>
+        <div className='basis-2/3'>
           <Card>some content</Card>
         </div>
         <div className='basis-1/3 pt-10 lg:pt-0'>
