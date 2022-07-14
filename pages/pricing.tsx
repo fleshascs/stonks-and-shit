@@ -1,6 +1,6 @@
 import Card from '../components/Card';
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <div className='flex flex-col lg:flex-row lg:space-x-4 pb-24 pt-16'>
