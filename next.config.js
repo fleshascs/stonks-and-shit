@@ -1,11 +1,15 @@
 const withPlugins = require('next-compose-plugins');
 const optimizedImages = require('next-optimized-images');
 
+const config = require('./site.config');
+
 const nextConfig = {
-  env: require('./site.config'),
+  env: config,
   images: {
     disableStaticImages: true
-  }
+  },
+  assetPrefix: config.basePath,
+  basePath: config.basePath
 };
 
 module.exports = withPlugins(
