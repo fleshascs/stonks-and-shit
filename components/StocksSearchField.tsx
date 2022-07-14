@@ -11,7 +11,7 @@ export const queryFn =
   <T = unknown, TQueryKey extends QueryKey = QueryKey>({
     signal
   }: QueryFunctionContext<TQueryKey>): T | Promise<T> => {
-    return fetch('/stocks.json?q=' + q, {
+    return fetch(process.env.basePath + '/stocks.json?q=' + q, {
       signal
     }).then((res) => res.json());
   };
