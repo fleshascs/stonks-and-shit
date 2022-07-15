@@ -3,12 +3,12 @@ import { Disclosure } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
 import clsx from 'clsx';
-import Image from './Image';
+// import Image from './Image';
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Pricing', href: '/pricing' },
-  { name: 'Contact', href: '/contact' }
+  { name: 'Home', href: process.env.basePath + '/' },
+  { name: 'Pricing', href: process.env.basePath + '/pricing' },
+  { name: 'Contact', href: process.env.basePath + '/contact' }
 ];
 
 export default function NavBar() {
