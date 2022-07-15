@@ -87,9 +87,11 @@ export default function NavBar() {
                 <Disclosure.Button
                   key={item.href}
                   as='a'
-                  href={item.href}
+                  href={process.env.basePath + item.href}
                   className={clsx(
-                    item.href === router.pathname ? 'text-blue-700' : 'text-gray-700',
+                    process.env.basePath + item.href === router.pathname
+                      ? 'text-blue-700'
+                      : 'text-gray-700',
                     'block px-3 py-2 text-base font-medium'
                   )}
                   aria-current={item.href === router.pathname ? 'page' : undefined}
