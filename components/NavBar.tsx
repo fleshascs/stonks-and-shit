@@ -6,9 +6,9 @@ import clsx from 'clsx';
 // import Image from './Image';
 
 const navigation = [
-  { name: 'Home', href: process.env.basePath + '/' },
-  { name: 'Pricing', href: process.env.basePath + '/pricing' },
-  { name: 'Contact', href: process.env.basePath + '/contact' }
+  { name: 'Home', href: '/' + process.env.basePath },
+  { name: 'Pricing', href: '/' + process.env.basePath + '/pricing' },
+  { name: 'Contact', href: '/' + process.env.basePath + '/contact' }
 ];
 
 export default function NavBar() {
